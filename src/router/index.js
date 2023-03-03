@@ -64,11 +64,6 @@ const router = createRouter({
       name: 'transaksi.create',
       component: () => import('../views/transaksi/TransaksiCreate.vue')
     },
-    {
-      path: '/transaksi/edit/:id',
-      name: 'transaksi.edit',
-      component: () => import('../views/transaksi/TransaksiEdit.vue')
-    },
     // {
     //   path: '/transaksi_detail',
     //   name: 'transaksi_detail',
