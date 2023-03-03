@@ -1,6 +1,7 @@
 # qtasnim_fe
 
 frontend using vuejs 3
+
 !!! DISCLAIMER !!!
 berikut ini adalah Kekurangan dan hal hal yang perlu perbaikan aplikasi frontend ini:
 
