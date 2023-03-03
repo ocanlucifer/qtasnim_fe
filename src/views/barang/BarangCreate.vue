@@ -29,17 +29,17 @@
                                 <div class="form-floating mb-4 xl:w-96">
                                     <input type="text"
                                         class="form-control
-                                                                                                                                                            block
-                                                                                                                                                            w-full
-                                                                                                                                                            px-3
-                                                                                                                                                            py-1.5
-                                                                                                                                                            text-base
-                                                                                                                                                            font-normal
-                                                                                                                                                            bg-clip-padding
-                                                                                                                                                            rounded
-                                                                                                                                                            transition
-                                                                                                                                                            ease-in-out
-                                                                                                                                                            m-0"
+                                                                                                                                                                block
+                                                                                                                                                                w-full
+                                                                                                                                                                px-3
+                                                                                                                                                                py-1.5
+                                                                                                                                                                text-base
+                                                                                                                                                                font-normal
+                                                                                                                                                                bg-clip-padding
+                                                                                                                                                                rounded
+                                                                                                                                                                transition
+                                                                                                                                                                ease-in-out
+                                                                                                                                                                m-0"
                                         placeholder="08XXXXXXXXXX" :class="{ 'is-invalid': validation.nama_barang }"
                                         v-model="barang.nama_barang">
                                     <span v-if="validation.nama_barang" class="invalid-feedback py-2.5" role="alert">
@@ -53,17 +53,17 @@
                                 <div class="form-floating mb-4 xl:w-96">
                                     <input type="text"
                                         class="form-control
-                                                                                                                                                            block
-                                                                                                                                                            w-full
-                                                                                                                                                            px-3
-                                                                                                                                                            py-1.5
-                                                                                                                                                            text-base
-                                                                                                                                                            font-normal
-                                                                                                                                                            bg-clip-padding
-                                                                                                                                                            rounded
-                                                                                                                                                            transition
-                                                                                                                                                            ease-in-out
-                                                                                                                                                            m-0"
+                                                                                                                                                                block
+                                                                                                                                                                w-full
+                                                                                                                                                                px-3
+                                                                                                                                                                py-1.5
+                                                                                                                                                                text-base
+                                                                                                                                                                font-normal
+                                                                                                                                                                bg-clip-padding
+                                                                                                                                                                rounded
+                                                                                                                                                                transition
+                                                                                                                                                                ease-in-out
+                                                                                                                                                                m-0"
                                         placeholder="08XXXXXXXXXX" :class="{ 'is-invalid': validation.stock }"
                                         v-model="barang.stock">
                                     <span v-if="validation.stock" class="invalid-feedback py-2.5" role="alert">
@@ -78,17 +78,17 @@
                                 <div class="form-floating mb-4 xl:w-96">
                                     <select
                                         class="form-select appearance-none
-                                                                                                                                    block
-                                                                                                                                    w-full
-                                                                                                                                    px-3
-                                                                                                                                    py-1.5
-                                                                                                                                    text-base
-                                                                                                                                    font-normal
-                                                                                                                                    bg-clip-padding
-                                                                                                                                    rounded
-                                                                                                                                    transition
-                                                                                                                                    ease-in-out
-                                                                                                                                    m-0"
+                                                                                                                                        block
+                                                                                                                                        w-full
+                                                                                                                                        px-3
+                                                                                                                                        py-1.5
+                                                                                                                                        text-base
+                                                                                                                                        font-normal
+                                                                                                                                        bg-clip-padding
+                                                                                                                                        rounded
+                                                                                                                                        transition
+                                                                                                                                        ease-in-out
+                                                                                                                                        m-0"
                                         placeholder="08XXXXXXXXXX" :class="{ 'is-invalid': validation.jenis_barang_id }"
                                         v-model="barang.jenis_barang">
                                         <option v-for="jenis_barang in jenis_barang" :key="jenis_barang.id"
@@ -107,17 +107,17 @@
                                 <div class="form-floating mb-4 xl:w-96">
                                     <input type="text"
                                         class="form-control
-                                                                                                                                                            block
-                                                                                                                                                            w-full
-                                                                                                                                                            px-3
-                                                                                                                                                            py-1.5
-                                                                                                                                                            text-base
-                                                                                                                                                            font-normal
-                                                                                                                                                            bg-clip-padding
-                                                                                                                                                            rounded
-                                                                                                                                                            transition
-                                                                                                                                                            ease-in-out
-                                                                                                                                                            m-0"
+                                                                                                                                                                block
+                                                                                                                                                                w-full
+                                                                                                                                                                px-3
+                                                                                                                                                                py-1.5
+                                                                                                                                                                text-base
+                                                                                                                                                                font-normal
+                                                                                                                                                                bg-clip-padding
+                                                                                                                                                                rounded
+                                                                                                                                                                transition
+                                                                                                                                                                ease-in-out
+                                                                                                                                                                m-0"
                                         placeholder="08XXXXXXXXXX" :class="{ 'is-invalid': validation.satuan }"
                                         v-model="barang.satuan" readonly>
                                     <span v-if="validation.satuan" class="invalid-feedback py-2.5" role="alert">
@@ -186,6 +186,13 @@ export default {
             let stock = barang.stock;
             let jenis_barang = barang.jenis_barang;
             let satuan = barang.satuan;
+            const config = {
+                headers: {
+                    "content-type": "multipart/form-data",
+                },
+                config
+            };
+
             axios
                 .post(`/barangs`,
                     {
