@@ -8,7 +8,7 @@ berikut ini adalah Kekurangan dan hal hal yang perlu perbaikan aplikasi frontend
     - fitur sorting, filter dan search belum bisa memunculkan realtime refresh data, padahal secara fungsi dari backend dan requestnya sudah bisa dan berfungsi.
     - fitur transaksi harusnya bisa di buat lebih simple dengan fungsi multiple input detail.
     - perbandingan jenis produk harusnya dalam bentuk chart saja di frontend nya.
-    - saya mohon maaf untuk kekurangsan di bagian front end ini, dikarenakan saya masih baru belajar di bulan februari, serta waktu saya mengerjakan bentrok dengan pekerjaan di kantor.
+    - saya mohon maaf untuk kekurangsan di bagian front end ini, dikarenakan saya masih baru belajar VueJs di bulan februari, serta waktu saya mengerjakan bentrok dengan pekerjaan di kantor.
     - terimakasih kesempatannya.
 
 a. tech spec:
